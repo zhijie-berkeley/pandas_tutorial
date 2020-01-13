@@ -1,0 +1,26 @@
+Pandas
+https://www.youtube.com/watch?v=vmEHCJofslg
+df = pd.read_csv('xxx.csv')
+df = pd.read_excel ('xxx.xlsx')
+df = pd.read_csv('xxx.txt', delimiter='\t')
+df.head(5)
+df.tail(5)
+df.columns
+df['names'][0:5]
+df[['names', 'tpye', 'HP']]
+df.iloc[0:4]
+df.iloc[2,1]
+df.iterrows()
+df.loc[df['type']==]
+df.describe()
+df.sort_values('name', ascending=False)
+df.sort_values(['type1','hp'], ascending=[1, 0])
+df.drop(columns=[''total])
+df.to_csv('yyy.csv', index=False)
+df.to_excel('xxx.xlsx', index=False)
+df.to_txt('xxx.txt', sep='\t')
+df.loc[df['type1']=='grass']
+df.reset_index(drop=True, inplace=True)
+df.loc[df['name'].str.contains('mega')]
+df.loc[df['total']>900, ['generation', 'legnedary']] = ['test1', 'test2']
+df.groupby[]
